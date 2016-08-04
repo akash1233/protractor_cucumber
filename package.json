@@ -10,16 +10,16 @@
     "chai": "^3.5.0",
     "chai-as-promised": "^5.3.0",
     "cookie-parser": "~1.4.3",
+    "cucumber-html-report": "^0.4.1",
     "debug": "~2.2.0",
     "express": "~4.13.4",
+    "fs": "0.0.2",
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
-    "cucumber": "^1.2.1",
-    "protractor-cucumber-framework": "^0.6.0",
-    "protractor-html-screenshot-reporter": "0.0.21",
-    "protractor-jasmine2-html-reporter": "0.0.6"
+    "cucumber": "^1.0.0",
+    "protractor-cucumber-framework": "^0.6.0"
   }
 }

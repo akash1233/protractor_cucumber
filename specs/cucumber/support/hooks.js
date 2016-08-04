@@ -1,4 +1,4 @@
-var outputDir = 'someDir';
+var outputDir = 'testResults';
 var Cucumber = require('cucumber');
 var CucumberHtmlReport = require('cucumber-html-report');
 var fs = require('fs');
@@ -23,7 +23,7 @@ var myHooks = function () {
   var createHtmlReport = function (sourceJson) {
     var report = new CucumberHtmlReport({
       source: sourceJson,       // source json
-      dest: 'outputDir',        // target directory (will create if not exists)
+      dest: outputDir,        // target directory (will create if not exists)
       name: 'report.html',       // Title for default template. (default is Cucumber Report)
       title: 'example report',    // Title for default template. (default is Cucumber Report)
       component: 'Suite navigation'   // Subtitle for default template. (default is empty)
@@ -53,12 +53,3 @@ var myHooks = function () {
 
 module.exports = myHooks;
 
-
-/*
-
-source: sourceJson, // source json
-  dest: testResults, // target directory (will create if not exists)
-  //template:  'mytemplate.html',    // your custom mustache template (uses default if not specified)
-  name: report.html, // Title for default template. (default is Cucumber Report)
-  title: example report,// Title for default template. (default is Cucumber Report)
-  component: My Component,       // Subtitle for default template. (default is empty)*/
