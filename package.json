@@ -19,7 +19,7 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
-    "cucumber": "^1.0.0",
+    "cucumber": "1.0.0",
     "protractor-cucumber-framework": "^0.6.0"
   }
 }
