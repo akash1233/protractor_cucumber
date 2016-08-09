@@ -1,10 +1,3 @@
-var chai = require('chai');
-var chaiAsPromised = require('chai-as-promised');
-chai.use(chaiAsPromised);
-
-var expect = chai.expect;
-
-
 module.exports = function() {
 
   this.Given(/^I go to the website with url "([^"]*)"$/, function(url, next) {
