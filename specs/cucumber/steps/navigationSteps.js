@@ -1,3 +1,5 @@
+//var restCall = require ('../support/restHelper.js')
+
 module.exports = function() {
 
   this.Given(/^I go to the website with url "([^"]*)"$/, function(url, next) {
