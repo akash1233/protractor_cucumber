@@ -1,16 +1,12 @@
 exports.config = {
-  // The address of a running selenium server.
-  seleniumAddress: 'http://localhost:4444/wd/hub',
+
+  sauceUser: 'dharmendrasingh',
+  sauceKey: 'e21c7bfb-7b48-4334-961f-cebc4078a457',
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
     'browserName': 'chrome'
   },
-
-  onPrepare: function() {
-    var helper = require('./protractorHelper');
-    helper.provideChai();
- },
 
   specs: ['specs/cucumber/exampleSpec.feature'],
 

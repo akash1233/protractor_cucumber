@@ -1,9 +1,10 @@
-//var restCall = require ('../support/restHelper.js')
-
 module.exports = function() {
 
   this.Given(/^I go to the website with url "([^"]*)"$/, function(url, next) {
-    browser.get(url);
+      browser.ignoreSynchronization = true;
+      browser.manage().timeouts().pageLoadTimeout(10000);
+      browser.get(url);
+      browser.sleep(5000);
     next();
   });
 
@@ -19,15 +20,7 @@ module.exports = function() {
 
   this.Then(/^The title of the page is(?: title)? "([^"]*)"$/,{timeout: 10000}, function(title, next) {
     var header = $('h1');
-
-/*      header.getText().then(function(data) {
-          expect(data).to.equal(title);
-          next();
-      }, function(error) {
-          assert.fail(error);
-          next();
-      });*/
-
    expect(header.getText()).to.eventually.equal(title).and.notify(next);
+      browser.close();
   });
 };

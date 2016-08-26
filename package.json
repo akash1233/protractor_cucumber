@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "cucumber": "1.0.0",
-    "protractor-cucumber-framework": "^0.6.0"
+    "protractor-cucumber-framework": "^0.6.0",
+    "protractor-helpers": "^1.0.2"
   }
 }
