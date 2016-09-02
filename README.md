@@ -17,6 +17,7 @@ Features :
 - Cuccumber reporting 
 - Grunt integration 
 - Drone Integration 
-- Circle CI Integrations(NR)
+- Circle CI Integrations(Not Required )
 - Saucelabs Integration (Work to be  completed )
-- Coverall Integration (Needs to be added )
+- Coverall Integration (WIP )
+- Jenkisn Integration (WIP)
