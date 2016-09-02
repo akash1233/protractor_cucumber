@@ -19,3 +19,4 @@ Features :
 - Drone Integration 
 - Circle CI Integrations(NR)
 - Saucelabs Integration (Work to be  completed )
+- Coverall Integration (Needs to be added )
