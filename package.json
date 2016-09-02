@@ -23,9 +23,9 @@
     "cucumber": "1.0.0",
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
-    "grunt-protractor-runner": "^3.2.0",
     "grunt-shell-spawn": "^0.3.10",
     "protractor-cucumber-framework": "^0.6.0",
-    "protractor-helpers": "^1.0.2"
+    "protractor-helpers": "^1.0.2",
+    "webdriver-manager": ""
   }
 }

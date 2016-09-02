@@ -2,3 +2,12 @@
 
 # protractor_cucumber
 Example testproject with Protractor and Cucumber
+
+Features :
+
+- Protractor with cucumber 
+- Cuccumber reporting 
+- Grunt integration 
+- Drone Integration 
+- Circle CI Integration 
+- Saucelabs Integration 
