@@ -14,9 +14,11 @@ Testproject with Protractor and Cucumber
 Features :
 
 - Protractor with cucumber 
-- Cuccumber reporting 
+- Cucumber reporting 
 - Grunt integration 
 - Drone Integration 
 - Circle CI Integrations(NR)
 - Saucelabs Integration (Work to be  completed )
 - Coverall Integration (Needs to be added )
+- HipTest Publishing (WIP)
+    - Publish results to hiptest 
