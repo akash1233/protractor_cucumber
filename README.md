@@ -20,4 +20,4 @@ Features :
 - Circle CI Integrations(Not Required )
 - Saucelabs Integration (Work to be  completed )
 - Coverall Integration (WIP )
-- Jenkins Integration (Completed)
+- Jenkins Integration(Working) 
