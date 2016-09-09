@@ -6,13 +6,11 @@
               browser.ignoreSynchronization = true;
               browser.manage().timeouts().pageLoadTimeout(10000);
               browser.get(url);
-              browser.sleep(10000);
             next();
           });
 
           this.When(/^I click on link with text "([^"]*)"$/, function(linkText, next) {
             element(by.linkText(linkText)).click();
-              browser.sleep(4000);
             next();
           });
 
