@@ -21,9 +21,10 @@
 
           this.Then(/^The title of the page is(?: title)? "([^"]*)"$/, function(title, next) {
             var header = $('h1');
-              header.getText().then(function(text) {
-                  console.log('text: ' + text);
-              })
+              // Debug step
+              // header.getText().then(function(text) {
+              //     console.log('text: ' + text);
+              // })
               expect(header.getText()).to.eventually.equal(title).and.notify(next);
           });
         };
