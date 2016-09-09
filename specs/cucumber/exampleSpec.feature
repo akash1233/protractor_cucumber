@@ -13,7 +13,7 @@ Feature: Running Cucumber with Protractor
   Scenario: Wehkamp site has mens landing page
     Given I go to the website with url "http://www.wehkamp.com"
     When I click on link with text "HEREN"
-    Then The title of the page is "Heren"
+    Then The title of the page is "Herenmode"
 
 
 
