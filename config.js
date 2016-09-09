@@ -7,7 +7,7 @@ exports.config = {
   capabilities: {
     'browserName': 'chrome'
   },
-
+  restartBrowserBetweenTests: false,
   specs: ['specs/cucumber/exampleSpec.feature'],
 
   framework: 'custom',
@@ -24,7 +24,17 @@ exports.config = {
     timeout: 10000,
     format: "pretty",
     tags: '@dev'
-  }
+  },
+  onComplete: function() {
 
+    var printSessionId = function(jobName){
+      browser.getSession().then(function(session) {
+        console.log('SauceOnDemandSessionID=' + session.getId() + ' job-name=' + jobName);
+      });
+    }
+    printSessionId("Insert Job Name Here");
+    browser.close();
+    browser.quit();
+  }
 
 };
