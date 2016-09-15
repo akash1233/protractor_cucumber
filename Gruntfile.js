@@ -54,5 +54,4 @@ module.exports = function(grunt) {
     grunt.registerTask('install', ['shell:npm_install', 'shell:protractor_install']);
 
     grunt.registerTask('default', ['jshint', 'protractor:singlerun']);
-
 };
