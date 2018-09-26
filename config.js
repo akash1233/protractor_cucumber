@@ -1,11 +1,14 @@
 exports.config = {
 
-  sauceUser: 'dharmendrasingh',
-  sauceKey: 'e21c7bfb-7b48-4334-961f-cebc4078a457',
+  // sauceUser: 'dharmendrasingh',
+  // sauceKey: 'e21c7bfb-7b48-4334-961f-cebc4078a457' ,
+
+  //seleniumAddress: 'http://localhost:4444/wd/hub',
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
     'browserName': 'chrome'
+
   },
   restartBrowserBetweenTests: false,
   specs: ['specs/cucumber/exampleSpec.feature'],
@@ -18,21 +21,22 @@ exports.config = {
   // relevant cucumber command line options
   cucumberOpts: {
     require: [
-      'specs/cucumber/steps/*.js',
-      'specs/cucumber/support/*.js'
+      'specs/cucumber/step_definitions/*.js',
     ],
-    timeout: 10000,
+    timeout: 1000000,
     format: "pretty",
     tags: '@dev'
   },
-  onComplete: function() {
+
+    onComplete: function() {
 
     var printSessionId = function(jobName){
+      jobName = 'test123'
       browser.getSession().then(function(session) {
         console.log('SauceOnDemandSessionID=' + session.getId() + ' job-name=' + jobName);
       });
     }
-    printSessionId("Insert Job Name Here");
+    printSessionId("Job name needs to be added");
     browser.close();
     browser.quit();
   }

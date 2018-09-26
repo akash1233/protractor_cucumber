@@ -5,15 +5,12 @@ Feature: Running Cucumber with Protractor
 
   @dev
   Scenario: Wehkamp site has children landing page
-    Given I go to the website with url "http://www.wehkamp.com"
-    When I click on link with text "KINDEREN"
-    Then The title of the page is "Kinderen"
+    Given I go to the website with url "https://google.com"
+    When I search the word "protractor"
+    Then click the first search result page
 
-  @dev
-  Scenario: Wehkamp site has mens landing page
-    Given I go to the website with url "http://www.wehkamp.com"
-    When I click on link with text "HEREN"
-    Then The title of the page is "Herenmode"
-
-
-
+#  @dev
+#  Scenario: Wehkamp site has mens landing page
+#    Given I go to the website with url "http://www.wehkamp.com"
+#    When I click on link with text "HEREN"
+#    Then The title of the page is "Herenmode"
